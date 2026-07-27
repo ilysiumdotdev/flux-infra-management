@@ -1,11 +1,15 @@
 apiVersion: gateway.envoyproxy.io/v1alpha1
 kind: EnvoyProxy
 metadata:
-  name: envoy-proxy
-  namespace: envoy-gateway-system
+  name: internal-envoy-proxy
+  namespace: gateway-system
 spec:
   provider:
     type: Kubernetes
     kubernetes:
       envoyService:
         type: LoadBalancer
+        labels:
+          networking.ilysium.io/lb-pool: internal
+      envoyDeployment:
+        replicas: 2

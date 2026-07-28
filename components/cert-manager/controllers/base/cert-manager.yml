@@ -33,9 +33,6 @@ spec:
     crds:
       enabled: true
       keep: true
-    config:
-      gatewayAPI:
-        enabled: true
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease

@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
   - gatewayclass.yml
   - internal-envoyproxy.yml
+  - internal-gateway-certificate.yml
   - internal-gateway.yml
   - perimeter-envoyproxy.yml
   - perimeter-gateway.yml

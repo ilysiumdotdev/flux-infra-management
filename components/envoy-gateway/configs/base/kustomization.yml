@@ -5,5 +5,4 @@ resources:
   - internal-envoyproxy.yml
   - internal-gateway-certificate.yml
   - internal-gateway.yml
-  - perimeter-envoyproxy.yml
-  - perimeter-gateway.yml
+
